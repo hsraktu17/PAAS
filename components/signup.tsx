@@ -2,7 +2,7 @@
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import Image from "next/image";
-import s1 from "@/public/sticker.svg";
+import s1 from "@/public/sticker.png";
 
 export function Signup() {
   return (
@@ -16,7 +16,7 @@ export function Signup() {
           innovating. Securely build, deploy, and scale the best web <br />
           experiences.
         </div>
-        <div className="flex space-x-3 mt-1">
+        <div className="flex w-full max-w-sm items-center space-x-2 mt-1">
           <Input type="email" placeholder="Email" className="w-80" />
           <Button type="submit">Sign Up</Button>
         </div>
