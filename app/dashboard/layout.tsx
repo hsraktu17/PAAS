@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "@/app/globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`bg-slate-100 ${inter.className} dark:bg-black`}>
+      <body className={`bg-white ${inter.className} dark:bg-black`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
